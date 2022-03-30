@@ -84,38 +84,38 @@ const generateTodoDOM = (todo) => {
     return todoEl;
 };
 
-// EXERCISE 6
+EXERCISE 6
 
-// function generateTodoDOM(todo) {
-//     const todoEl = document.createElement('label');
-//     const containerEl = document.createElement('div');
-//     const todoText = document.createElement('span');
+function generateTodoDOM(todo) {
+    const todoEl = document.createElement('label');
+    const containerEl = document.createElement('div');
+    const todoText = document.createElement('span');
 
-//     todoText.textContent = todo;
-//     todoEl.classList.add("list-item");
-//     containerEl.classList.add("list-item__container");
+    todoText.textContent = todo;
+    todoEl.classList.add("list-item");
+    containerEl.classList.add("list-item__container");
 
-//     containerEl.appendChild(todoText);
-//     todoEl.appendChild(containerEl);
+    containerEl.appendChild(todoText);
+    todoEl.appendChild(containerEl);
 
-//     return todoEl;
+    return todoEl;
 
-// };
+};
 
-// EXERCISE 7
+EXERCISE 7
 
-// function renderTodos(todos) {
+function renderTodos(todos) {
 
-//     const todoList = document.querySelector('#todos');
-//     todoList.innerHTML = "";
+    const todoList = document.querySelector('#todos');
+    todoList.innerHTML = "";
 
-//     todos.forEach((elementInTodoArray) => {
-//         console.log("elementInTodoArray", elementInTodoArray);
-//         todoList.appendChild(generateTodoDOM(elementInTodoArray));
-//     });
-// };
+    todos.forEach((elementInTodoArray) => {
+        console.log("elementInTodoArray", elementInTodoArray);
+        todoList.appendChild(generateTodoDOM(elementInTodoArray));
+    });
+};
 
-// EXERCISE 8
+EXERCISE 8
 
 function renderTodos(todos) {
 
@@ -137,7 +137,9 @@ function renderTodos(todos) {
 
 renderTodos(todos);
 
-// EXERCISE 9
+
+
+
 
 
 
